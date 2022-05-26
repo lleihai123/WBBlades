@@ -16,3 +16,4 @@ DerivedData
 *.xcbkptlist
 *.xcuserstate
 *.xcscheme
+SDK/
