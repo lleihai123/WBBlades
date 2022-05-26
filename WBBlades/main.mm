@@ -56,7 +56,8 @@ static void scanStaticLibrary(int argc, const char * argv[]) {
     //param1:type  params2:libs' path list
     for (int i = 0; i < argc - 2; i++) {
         @autoreleasepool {
-            NSString *libPath = [NSString stringWithFormat:@"%s",argv[i+2]];//each libs' path
+            //@"/Users/wesleylei/Documents/公司项目/GitHub/WBBlades/SDK/TXLiteAVSDK_Smart_No_VOD.framework";
+            NSString *libPath = [NSString stringWithUTF8String:argv[2]];
             NSLog(@"分析路径：%@", libPath);
             
             NSString *libName = [libPath lastPathComponent];//lib's name
@@ -95,7 +96,7 @@ static void scanUnusedClass(int argc, const char * argv[]) {
         //enumerate all libs and all classes 
         for (int i = 4; i < argc; i++) {
             @autoreleasepool {
-                NSString *libPath = [NSString stringWithFormat:@"%s",argv[i]];
+                NSString *libPath = [NSString stringWithUTF8String:argv[i]];//[NSString stringWithFormat:@"%s",argv[i]];
                 NSLog(@"读取%@所有类", libPath);
                 enumLibFiles(libPath);
             }

@@ -9,6 +9,7 @@
 #import "WBBladesFileManager.h"
 #import "WBBladesCMD.h"
 #import "WBBladesTool.h"
+#import "WBBladesScanManager.h"
 
 @implementation WBBladesFileManager
 
@@ -17,6 +18,7 @@
     NSData *fileData = [NSMutableData dataWithContentsOfURL:tmpURL
                                                     options:NSDataReadingMappedIfSafe
                                                       error:NULL];
+    [WBBladesScanManager scanStaticLibrary:fileData];
     if (!fileData) {
         NSLog(@"文件读取失败");
     }

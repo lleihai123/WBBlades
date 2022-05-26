@@ -121,6 +121,7 @@
 		37CF3F1423B9EC05006D814F /* WBBladesTool.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WBBladesTool.mm; sourceTree = "<group>"; };
 		37D130FE22F81B4F00C3D759 /* WBBladesScanManager+UnuseClassScan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WBBladesScanManager+UnuseClassScan.h"; sourceTree = "<group>"; };
 		37D130FF22F81B4F00C3D759 /* WBBladesScanManager+UnuseClassScan.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "WBBladesScanManager+UnuseClassScan.mm"; sourceTree = "<group>"; };
+		C17043F3283F9EA8008C9531 /* README_CN.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README_CN.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +222,7 @@
 		3794EE6F22B3C71300D5DFA4 = {
 			isa = PBXGroup;
 			children = (
+				C17043F3283F9EA8008C9531 /* README_CN.md */,
 				3794EE7A22B3C71300D5DFA4 /* WBBlades */,
 				3794EE7922B3C71300D5DFA4 /* Products */,
 				3749FF6326359D3800E90888 /* Frameworks */,
